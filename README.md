@@ -25,6 +25,7 @@ The goal is to show which parts of high reported accuracies come from the target
 | Depression-angle gap | At a fixed number of chips per class, how does accuracy at a held-out angle depend on the training angles? | `scripts/train_angle_all.py`, `scripts/train_angle_heldout.py` |
 | Partial library | If the other classes have training chips at the test angle and one class does not, what happens to that class? | `scripts/train_angle_heldout_class.py` |
 | Vision–language features | Zero-shot and linear-probe CLIP vs. SARCLIP on MSTAR | `scripts/eval_clip_mstar.py` (model loading in `scripts/eval_sarclip.py`) |
+| Paper figures | Figures 1–4 (example inputs, angle gap, angle heatmap, partial library) | `scripts/make_paper1_figures.py` |
 
 ```bash
 # Background controls (data: mstar | atr_soc | atr_scene; cond: full | bg | tgt | maskpos)
